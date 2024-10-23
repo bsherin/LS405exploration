@@ -26,7 +26,6 @@ folium==0.18.0
 fonttools==4.54.1
 fqdn==1.5.1
 funcy==2.0
-gensim==4.3.3
 geographiclib==2.0
 geopy==2.4.1
 h11==0.14.0
@@ -86,7 +85,6 @@ pure_eval==0.2.3
 pyarrow==17.0.0
 pycparser==2.22
 Pygments==2.18.0
-pyLDAvis==3.4.1
 pyparsing==3.2.0
 python-dateutil==2.9.0.post0
 python-json-logger==2.0.7

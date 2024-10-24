@@ -3,6 +3,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 from IPython.display import display, HTML
+import json
+import collections
+import six
+import nltk
 
 def display_matrix(mat, row_labels, col_labels, rows=10):
     return pd.DataFrame(mat, index=row_labels, columns=col_labels).head(rows).round(3)

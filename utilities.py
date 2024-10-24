@@ -2,6 +2,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
+from IPython.display import display, HTML
 
 def display_matrix(mat, row_labels, col_labels, rows=10):
     return pd.DataFrame(mat, index=row_labels, columns=col_labels).head(rows).round(3)
@@ -117,8 +118,8 @@ def html_table(data, title=None, click_type="word-clickable", sortable=True,
         show_header = True
     else:
         dlist = data
-    return build_html_table_from_data_list(dlist, title, click_type, sortable, sidebyside,
-                                           show_header, header_style, body_style, outer_border, max_rows=max_rows)
+    return HTML(build_html_table_from_data_list(dlist, title, click_type, sortable, sidebyside,
+                                                show_header, header_style, body_style, outer_border, max_rows=max_rows))
 
 def build_html_table_from_data_list(data_list, title=None, click_type="word-clickable",
                                     sortable=True, sidebyside=False, has_header=True,
